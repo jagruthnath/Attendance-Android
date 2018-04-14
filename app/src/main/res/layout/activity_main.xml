@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/checkIn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="getCheckIn"
+            android:text="@string/checkIn"
+            tools:ignore="OnClick" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp"
+        android:text="@string/remain"
+        android:textAlignment="center"
+        android:textColor="#ff6666"
+        android:visibility="invisible"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/timerValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:text="@string/timerVal"
+        android:textAlignment="center"
+        android:textColor="#ff6666"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        tools:ignore="MissingPrefix" />
+
+    <Button
+        android:id="@+id/seeAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:onClick="viewAttendance"
+        android:text="@string/seeAttendance"/>
+
+    <ListView
+        android:id="@+id/listAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="286dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/timerValue" />
+</RelativeLayout>
+

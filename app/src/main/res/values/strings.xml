@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Attendance</string>
+    <string name="timerVal">00:00:00</string>
+    <string name="seeAttendance">See Attendance</string>
+    <string name="remain">REMAINING TIME FOR SESSION</string>
+    <string name="checkIn">Check In</string>
+
+</resources>
